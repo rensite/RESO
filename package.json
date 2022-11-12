@@ -1,0 +1,34 @@
+{
+  "name": "reso",
+  "version": "1.0.0",
+  "description": "What is my viewport?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browser",
+    "resolution",
+    "viewport"
+  ],
+  "author": "RenSite",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.56.1",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "bowser": "^2.11.0"
+  }
+}

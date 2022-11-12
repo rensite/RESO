@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RenSite</title>
+    <meta name="description" content="">
+    <meta name="author" content="RenSite">
+    <link rel="stylesheet" href="/main.css">
+    <script defer type="module" src="/scripts.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <strong>&Racute;ESO</strong>
+        <span>/ What is my viewport?</span>
+    </div>
+    <div class="social">
+        <a href="https://github.com/rensite/reso" target="_blank">
+            <img src="/github.svg" />
+        </a>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="main__viewport viewport">
+            <div class="viewport-label">The <strong>viewport</strong> of your browser is</div>
+            <div class="viewport-value" data-js-viewport>—</div>
+        </div>
+        
+        <div class="info">
+            <div class="info-row">
+                <div class="info-label label">native resolution</div>
+                <div class="info-value value" data-js-resolution>—</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label label">PPI</div>
+                <div class="info-value value" data-js-ppi>—</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label label">platform</div>
+                <div class="info-value value" data-js-platform>—</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label label">browser</div>
+                <div class="info-value value" data-js-browser>—</div>
+            </div>
+        </div>
+
+        <div class="copy"></div>
+    </div>
+</main>
+
+<footer>&copy; <a href="https://renatgalin.pro">Renat Galin</a> 2022</footer>
+</body>
+</html>

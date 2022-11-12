@@ -1,0 +1,164 @@
+@import "./node_modules/normalize.css/normalize";
+
+:root {
+    --color-peter-river: #3498db;
+    --color-wet-asphalt: #34495e;
+    --color-midnight-blue: #2c3e50;
+    --color-clouds: #ecf0f1;
+    --color-silver: #bdc3c7;
+    --color-asbestos: #7f8c8d;
+}
+
+@mixin isMobile {
+    @media (max-width: 640px) {
+      @content;
+    }
+}
+html {
+    font-size: 62.5%;
+
+    @include isMobile() {
+        font-size: 38%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-10%);
+
+        &__viewport {
+            margin-bottom: 3.6rem;
+
+            @include isMobile() {
+                margin-bottom: 4rem;
+            }
+        }
+}
+
+.viewport {
+    text-align: left;
+    line-height: 1;
+
+    &-label {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: var(--color-silver);
+
+        @include isMobile() {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: .6rem;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--color-wet-asphalt);
+        }
+    }
+
+    &-value {
+        font-size: 9.4rem;
+        font-weight: 600;
+        color: var(--color-wet-asphalt);
+    }
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 2rem;
+
+    @include isMobile() {
+        font-size: 2.4rem;
+    }
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.label {
+    color: var(--color-silver);
+}
+
+.value {
+    color: var(--color-asbestos);
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 6.4rem;
+    width: 100%;
+    padding: 0 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+
+    @include isMobile() {
+        font-size: 2rem;
+    }
+
+    strong {
+        color: var(--color-wet-asphalt);
+    }
+
+    span {
+        opacity: .6;
+        color: var(--color-asbestos);
+    }
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    font-size: 1.2rem;
+    right: 3.2rem;
+    height: 3.2rem;
+    opacity: .6;
+    color: var(--color-asbestos);
+    text-transform: uppercase;
+
+    @include isMobile() {
+        font-size: 2rem;
+        width: 100%;
+        right: -10px;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.social {
+    a {
+        opacity: 0.6;
+        transition: opacity .3s ease;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
